@@ -1,6 +1,4 @@
-import os
 from project import create_app, db
-# from app1.models import User, Role
 from flask_migrate import Migrate
 
 app = create_app('default')

@@ -13,7 +13,11 @@ def create_app(config_name):
 
     # attach routes and custom error pages here
 
-    from app1 import app1 as main_blueprint
+    from app1.views import app1 as main_blueprint
+    from app2.views import app2 as app2_blueprint
+
     app.register_blueprint(main_blueprint)
+    app.register_blueprint(app2_blueprint)
+
 
     return app
